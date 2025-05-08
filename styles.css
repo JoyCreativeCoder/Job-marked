@@ -1,0 +1,26 @@
+.jobmarked-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: green;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    z-index: 9999;
+}
+
+.jobmarked-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 9999;
+}
