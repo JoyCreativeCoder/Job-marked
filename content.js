@@ -23,10 +23,10 @@ function showMarkedBtn() {
     btn.className = "jobmarked-button";
     btn.textContent = "Mark as Applied"
 
-    btn.addEventListenr("click", () => {
+    btn.addEventListener("click", () => {
         chrome.runtime.sendMessage({type:"MARK_JOB", url:jobUrl}, (response) => {
             if(response.success) {
-                button.remove(); 
+                btn.remove(); 
                 showAppliedBanner()
             } else {
                 alert("Something went wrong. Try again.");
